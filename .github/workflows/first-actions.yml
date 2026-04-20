@@ -1,0 +1,13 @@
+name: My First GitHub Actions
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+    - name: Run tests
+      run: |
+        sh calc.sh
